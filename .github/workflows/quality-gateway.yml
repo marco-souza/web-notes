@@ -11,10 +11,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Biome
-        uses: biomejs/setup-biome@v2
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
         with:
-          version: latest
+          deno-version: v2.x.x
 
       - name: Run Biome
-        run: biome ci .
+        run: deno run -A npm:biome ci .
