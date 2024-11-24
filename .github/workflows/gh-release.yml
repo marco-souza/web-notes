@@ -1,4 +1,5 @@
-name: Release
+# .github/workflows/release.yml
+name: Create Release on version change
 
 on:
   push:
@@ -12,19 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Create release from tag
+        uses: marco-souza/tag-release@1.2.0
         with:
-          fetch-depth: 0
-
-      - uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
-
-      - name: Install dependencies
-        run: bun i && bun run build
-
-      - name: Create release with tag
-        run: sh .github/workflows/release-tag.sh
-        env:
           title: 🚀 Release
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          version-file: package.json
+          token: ${{ secrets.GITHUB_TOKEN }}
