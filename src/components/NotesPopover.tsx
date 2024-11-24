@@ -8,7 +8,7 @@ import { note, setContent } from "@/domain/note";
 const PopoverBody: Component = () => {
   return (
     <textarea
-      class="w-full h-32 p-2 rounded-md bg-gray-200"
+      class="w-full h-36 text-xs p-2 rounded-md bg-gray-200"
       value={note().content}
       placeholder="Write your notes here..."
       onInput={(e) => setContent((e.target as HTMLTextAreaElement).value)}
@@ -18,7 +18,7 @@ const PopoverBody: Component = () => {
 
 const PopoverHeader: Component = () => {
   return (
-    <div class="flex gap-4 align-middle justify-center">
+    <div class="flex gap-4 align-middle justify-between">
       <Popover.Title class="text-md font-medium">📝 Page Notes</Popover.Title>
 
       <div>
