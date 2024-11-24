@@ -1,13 +1,13 @@
 {
-  "name": "code-review-checker",
+  "name": "web-notes",
   "private": true,
   "version": "0.2.0",
   "type": "module",
   "scripts": {
-    "lint": " bunx biome lint --write .",
-    "fmt": "bunx biome format --write .",
-    "check": "bunx biome check --write .",
-    "release": "npm version",
+    "lint": "biome lint --write .",
+    "fmt": "biome format --write .",
+    "check": "biome check --write .",
+    "release": "deno run jsr:@m3o/version",
     "dev": "vite",
     "build": "STAGE=prod vite build",
     "preview": "vite preview"

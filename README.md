@@ -1,7 +1,7 @@
-# Tamper code-review-checker
+# Tampermonkey web-notes
 
-[![Quality Gateway](https://github.com/marco-souza/code-review-checker/actions/workflows/quality-gateway.yml/badge.svg)](https://github.com/marco-souza/code-review-checker/actions/workflows/quality-gateway.yml)
-[![Release](https://github.com/marco-souza/code-review-checker/actions/workflows/gh-release.yml/badge.svg)](https://github.com/marco-souza/code-review-checker/actions/workflows/gh-release.yml)
+[![Quality Gateway](https://github.com/marco-souza/web-notes/actions/workflows/quality-gateway.yml/badge.svg)](https://github.com/marco-souza/web-notes/actions/workflows/quality-gateway.yml)
+[![Release](https://github.com/marco-souza/web-notes/actions/workflows/gh-release.yml/badge.svg)](https://github.com/marco-souza/web-notes/actions/workflows/gh-release.yml)
 [![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
 
 Tampermonkey script which gives you a code review checklist for your pull
@@ -11,12 +11,7 @@ requests.
 
 ![SolidJS](https://img.shields.io/badge/SolidJS-2c4f7c?style=for-the-badge&logo=solid&logoColor=c8c9cb)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-
-## Demo
-
-https://github.com/user-attachments/assets/01618416-79aa-42cd-9d26-abc6d90e41af
 
 ## Features
 
@@ -31,16 +26,16 @@ https://github.com/user-attachments/assets/01618416-79aa-42cd-9d26-abc6d90e41af
 ### Building a dev script
 
 ```bash
-bun Install
-bun dev
+deno Install
+deno task dev
 ```
 
 ### Building a production script
 
 ```bash
-bun install
-bun run build
-bun preview
+deno install
+deno task build
+deno preview
 ```
 
 ## Usage

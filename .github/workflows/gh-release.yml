@@ -15,9 +15,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: oven-sh/setup-bun@v2
+      - uses: denoland/setup-deno@v2
         with:
-          bun-version: latest
+          deno-version: v2.x
 
       - name: Install dependencies
         run: bun i && bun run build
@@ -25,5 +25,6 @@ jobs:
       - name: Create release with tag
         run: sh .github/workflows/release-tag.sh
         env:
+          title: 🚀 Release
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
