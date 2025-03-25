@@ -2,8 +2,8 @@ import type { Component } from "solid-js";
 
 import { Popover } from "@kobalte/core/popover";
 
-import clippyJump from "@/static/clippy-jump.gif";
 import { note, setContent } from "@/domain/note";
+import clippyJump from "@/static/clippy-jump.gif";
 
 const PopoverBody: Component = () => {
   return (
